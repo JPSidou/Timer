@@ -1,55 +1,72 @@
-# React + TypeScript + Vite
+# ⏳ Timer App — Controle seu tempo com estilo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Seja bem-vindo(a) ao **Timer App**, a solução perfeita pra quem quer manter o foco, acompanhar tarefas e ver um histórico bonitão do que foi feito (ou não 🫣). Feito com **ReactJS**, estilizado com **Styled Components** e roteado com **React Router DOM**. Tudo no capricho!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 O que essa belezinha faz?
 
-## Expanding the ESLint configuration
+- ✅ Você define **quanto tempo quer focar** numa tarefa.
+- ✍️ Dá um nome pra atividade (nada de "coisa" ou "negócio", hein?).
+- 🕒 O cronômetro começa a contar!
+- 📜 Na página de **histórico**, você vê tudo que já fez (ou não fez):
+  - ✔️ Concluído  
+  - ⏹️ Interrompido  
+  - 🔄 Em andamento (somente **uma tarefa por vez** pode estar rolando)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tecnologias usadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- [ReactJS](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [React Router DOM](https://reactrouter.com/)
+- [Context API](https://reactjs.org/docs/context.html)
+- [Reducer (useReducer)](https://reactjs.org/docs/hooks-reference.html#usereducer)
+- [React Hook Form](https://react-hook-form.com/)
+- [Immer](https://immerjs.github.io/immer/)
+- [Zod](https://zod.dev/)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# Timer
+## 📁 Como rodar o projeto
+
+- Clone o repositório:
+-Clone o repositório:
+  - git clone https://github.com/seu-usuario/timer-app.git.
+- Entre na pasta do projeto:
+  - cd timer-app.
+- Instale as dependências:
+  - npm install.
+- Rode a aplicação:
+  - npm run dev.
+
+---
+  
+## 🖼️ Layout
+
+A aplicação conta com duas rotas principais:
+
+- `/` → Página principal com o timer e o formulário de tarefas.
+- `/history` → Página de histórico com os ícones de status e a lista das atividades cronometradas.
+
+---
+
+## 💡 Toques finais
+
+Esse projeto é ótimo pra treinar **hooks do React**, trabalhar com **estados globais**, usar o **localStorage** (spoiler!) e entender como fazer um app reativo, bonito e funcional. Tudo isso com **componentização** na veia!
+
+---
+
+## 📬 Contribuições são bem-vindas!
+
+Se quiser sugerir algo, corrigir um bug ou só dar um salve, abre uma issue ou manda um PR! 😄
+
+---
+
+## 🧑‍💻 Feito por
+
+**João Pedro** com 💙  
+[LinkedIn](https://www.linkedin.com/in/jpsidou/)  
+📧 joaopedrosidou2018@gmail.com
+
